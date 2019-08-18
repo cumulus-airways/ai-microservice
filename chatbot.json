@@ -1,0 +1,569 @@
+{
+    "name": "icp-airway-chatbot",
+    "intents": [
+      {
+        "intent": "list",
+        "examples": [
+          {
+            "text": "show me flights"
+          },
+          {
+            "text": "list all flights"
+          },
+          {
+            "text": "where can I travel"
+          }
+        ],
+        "description": "list down flights"
+      },
+      {
+        "intent": "want",
+        "examples": [
+          {
+            "text": "want to checkin"
+          },
+          {
+            "text": "want to checkin to the flight"
+          },
+          {
+            "text": "checkin to the flight"
+          },
+          {
+            "text": "checkin to the booking"
+          },
+          {
+            "text": "checkin to my booking"
+          }
+        ],
+        "description": "want to checkin"
+      },
+      {
+        "intent": "book",
+        "examples": [
+          {
+            "text": "want flights"
+          },
+          {
+            "text": "book flights"
+          }
+        ],
+        "description": ""
+      }
+    ],
+    "entities": [
+      {
+        "entity": "destination",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "EWR",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "HNL",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "DXB",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PHX",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "CAI",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "BDL",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "BOS",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "IND",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "ORD",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "SEA",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PBI",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "CLT",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "MIA",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "ANC",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "MSP",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "DFW",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "ATL",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "IAH",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PDX",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "MCI",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "FLL",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "MCO",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "JFK",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "source",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "ORD",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "BQN",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "ANC",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "LAX",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "SFO",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "SEA",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "LAS",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "DEN",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "SLC",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PDX",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "FAI",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "MSP",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "IND",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "CAI",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PHX",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "SJU",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PBG",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "IAG",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "PSE",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "GEG",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "DXB",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "numbers",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "4",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "1",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "2",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "3",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "0",
+            "synonyms": []
+          },
+          {
+            "type": "synonyms",
+            "value": "5",
+            "synonyms": []
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-date",
+        "values": []
+      },
+      {
+        "entity": "sys-time",
+        "values": []
+      },
+      {
+        "entity": "checkin",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "checkin",
+            "synonyms": [
+              "checkin to flight"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "flight",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "flight",
+            "synonyms": [
+              "flight ticket"
+            ]
+          }
+        ],
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-number",
+        "values": []
+      }
+    ],
+    "language": "en",
+    "metadata": {
+      "api_version": {
+        "major_version": "v1",
+        "minor_version": "2018-07-10"
+      }
+    },
+    "skill_id": "940b4de6-d7a9-4a50-874e-a1b42f074a58",
+    "description": "",
+    "dialog_nodes": [
+      {
+        "type": "event_handler",
+        "output": {
+          "text": "enter the shortcode for your source"
+        },
+        "parent": "slot_6_1546939329245",
+        "event_name": "focus",
+        "dialog_node": "handler_8_1546939329245",
+        "previous_sibling": "handler_7_1546939329245"
+      },
+      {
+        "type": "event_handler",
+        "output": {},
+        "parent": "slot_6_1546939329245",
+        "context": {
+          "source": "@source"
+        },
+        "metadata": {},
+        "conditions": "@source",
+        "event_name": "input",
+        "dialog_node": "handler_7_1546939329245"
+      },
+      {
+        "type": "slot",
+        "parent": "node_4_1546939269153",
+        "variable": "$destination",
+        "dialog_node": "slot_9_1546939366526",
+        "previous_sibling": "slot_6_1546939329245"
+      },
+      {
+        "type": "slot",
+        "parent": "node_4_1546939269153",
+        "variable": "$date",
+        "dialog_node": "slot_12_1546939380491",
+        "previous_sibling": "slot_9_1546939366526"
+      },
+      {
+        "type": "slot",
+        "output": {},
+        "parent": "node_4_1546939269153",
+        "metadata": {},
+        "variable": "$source",
+        "dialog_node": "slot_6_1546939329245",
+        "previous_sibling": "handler_5_1546939329238"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": {
+            "values": [
+              "Enter the Source, Destination and Date of travel"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "node_4_1546939269153",
+        "metadata": {},
+        "event_name": "focus",
+        "dialog_node": "handler_5_1546939329238"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": "enter destination"
+        },
+        "parent": "slot_9_1546939366526",
+        "event_name": "focus",
+        "dialog_node": "handler_11_1546939366526",
+        "previous_sibling": "handler_10_1546939366526"
+      },
+      {
+        "type": "event_handler",
+        "parent": "slot_9_1546939366526",
+        "context": {
+          "destination": "@destination"
+        },
+        "conditions": "@destination",
+        "event_name": "input",
+        "dialog_node": "handler_10_1546939366526"
+      },
+      {
+        "type": "event_handler",
+        "output": {
+          "text": "enter date of travel"
+        },
+        "parent": "slot_12_1546939380491",
+        "event_name": "focus",
+        "dialog_node": "handler_14_1546939380491",
+        "previous_sibling": "handler_13_1546939380491"
+      },
+      {
+        "type": "event_handler",
+        "parent": "slot_12_1546939380491",
+        "context": {
+          "date": "@sys-date"
+        },
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "dialog_node": "handler_13_1546939380491"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "I do not understand"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "metadata": {},
+        "conditions": "anything_else",
+        "dialog_node": "node_1_1546954741902",
+        "previous_sibling": "node_2_1546957257708"
+      },
+      {
+        "type": "frame",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "_listing,$source,$destination,$date"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "metadata": {
+          "fallback": "leave"
+        },
+        "conditions": "#list || #book && @flight",
+        "digress_in": "does_not_return",
+        "dialog_node": "node_4_1546939269153",
+        "digress_out": "allow_all",
+        "previous_sibling": "Welcome",
+        "digress_out_slots": "not_allowed"
+      },
+      {
+        "type": "standard",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "checking,"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "metadata": {},
+        "conditions": "@checkin && #want",
+        "dialog_node": "node_2_1546957257708",
+        "previous_sibling": "node_4_1546939269153"
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "generic": [
+            {
+              "values": [
+                {
+                  "text": "Hi, Welcome to ICP-Airways. Where do you want to travel?"
+                },
+                {
+                  "text": "Hi, ICP Airways chatbot. How can I help you"
+                }
+              ],
+              "response_type": "text",
+              "selection_policy": "sequential"
+            }
+          ]
+        },
+        "metadata": {},
+        "conditions": "welcome",
+        "dialog_node": "Welcome"
+      }
+    ],
+    "workspace_id": "8885d1f2-bca6-4443-85a7-74aa82a2fadd",
+    "counterexamples": [],
+    "system_settings": {
+      "tooling": {
+        "store_generic_responses": true
+      }
+    },
+    "learning_opt_out": false,
+    "status": "Available"
+  }
