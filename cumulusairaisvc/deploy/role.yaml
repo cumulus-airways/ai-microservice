@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   creationTimestamp: null
-  name: cumulusbankaisvc
+  name: cumulusairaisvc
 rules:
 - apiGroups:
   - ""
@@ -40,7 +40,7 @@ rules:
 - apiGroups:
   - apps
   resourceNames:
-  - cumulusbankaisvc
+  - cumulusairaisvc
   resources:
   - deployments/finalizers
   verbs:
@@ -58,7 +58,7 @@ rules:
   verbs:
   - get
 - apiGroups:
-  - cumulusbank.com
+  - cumulusair.com
   resources:
   - '*'
   verbs:

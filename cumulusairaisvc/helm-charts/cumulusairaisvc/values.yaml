@@ -87,12 +87,12 @@ imagestream:
   label: ai-svc
 
 buildconfig:
-  uri: "https://github.com/cumulus-bank/ai-microservice.git"
+  uri: "https://github.com/cumulus-airways/ai-microservice.git"
   branch: "master"
   name: "ai-svc"
   imagename: "ai-svc:latest"
-  secret1: "secret567"
-  secret2: "secret567"
+  secret1: $(head -c 24 /dev/random | base64)
+  secret2: $(head -c 24 /dev/random | base64)
 
 routes:
   host: "ai-svc-kubeapp.apps.9.30.210.207.nip.io"

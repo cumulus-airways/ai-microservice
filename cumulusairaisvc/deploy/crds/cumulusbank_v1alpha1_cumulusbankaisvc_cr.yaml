@@ -1,5 +1,5 @@
 apiVersion: cumulusbank.com/v1alpha1
-kind: CumulusBankAiSvc
+kind: CumulusAirAiSvc
 metadata:
   name: aisvc
 spec:
